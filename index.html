@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shawarma Rox!</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+<style>
+   body {
+  font-family: Arial, sans-serif;
+  
+  
+}
+
+.myVideo {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  width: 100%; 
+  height: 100%;
+}
+
+.box {
+  width: 40%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.2);
+  padding: 10px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid #06D85F;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+   background-color:var(--blkcolor);
+    border: 1px solid var(--brndcolor);
+    color: var(--brndcolor);
+}
+.button:hover {
+  background: #06D85F;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+
+}
+</style>
+
+<body>
+    <div class="container">
+        
+        <!-- Landing Section Code starts here -->
+        <div class="landing-section" id="order">
+            <header>
+                <img src="./images/shalogo.png">
+            </header>
+            <section>
+            	
+
+              <h2 class="text" font-color="white">Brighten your<br>day with a<br>delicious shawarma</h2>
+
+
+                <button>Place an order 
+                    <a href="tel:6475509797"><img src="./images/phone-call 32px.png" alt=""></a>
+                    <a href="https://wa.me/6475509797" target="_blank"><img src="./images/whatsapp 32px.png" alt=""></a>
+                </button>
+                 <button>Order now on
+                    <a href="https://www.zomato.com/hyderabad/best-shawarmas-meerpet/order" target="_blank"><img src="/images/zom.png" alt=""></a>
+                </button>
+            </section>
+        </div>
+
+        <!-- Landing Section Code ends here -->
+        <!-- About Section Code starts here -->
+
+        <div class="about-section" id="about">
+            <h3>About us</h3>
+            <p>Shawarma Rox offers delightful shawarmas that you can enjoy in the pleasant ambience.</p>
+            
+        </div>
+
+</br>
+
+        <!-- About Section Code ends here -->
+
+        <div class="box">
+    <a class="button" href="menu.html" style="background-color:black">Let me see the menu!</a>
+</div>
+
+<div id="popup1" class="overlay">
+    <div class="popup">
+        <h2>Here you go</h2>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+            
+        </div>
+    </div>
+</div>
+
+        <!-- Menu Section Code Starts Here -->
+
+        <div class="menu-section">
+            <h3>Customer's Favourites</h3>
+            <span class="menu-tag">Most purchased shawarma from our customers</span>
+            <div class="menu-items">
+                <div class="menu-item-1">
+                    <div class="item-image1"></div>
+                    <div class="menu-contents">
+                        <h4>Rumali Shawarma</h4>
+                        <p>Shawarma is wrapped with pita bread. but here street vendors sometimes wrap it with rumali roti or with a hot dog bun.</p>
+                        <div class="menu-pricetag">
+                            <i class="fas fa-tag"></i>
+                            <span>90 ₹</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item-2">
+                    <div class="item-image2"></div>
+                    <div class="menu-contents">
+                        <h4>Beef Shawarma</h4>
+                        <p>Shawarma is wrapped with pita bread. but here street vendors sometimes wrap it with rumali roti or with a hot dog bun.</p>
+                        <div class="menu-pricetag">
+                            <i class="fas fa-tag"></i>
+                            <span>110 ₹</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item-3">
+                    <div class="item-image3"></div>
+                    <div class="menu-contents">
+                        <h4>Full Meat Shawarma</h4>
+                        <p>Shawarma is wrapped with pita bread. but here street vendors sometimes wrap it with rumali roti or with a hot dog bun.</p>
+                        <div class="menu-pricetag">
+                            <i class="fas fa-tag"></i>
+                            <span>130 ₹</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menu Section Code Ends Here -->
+
+        <!-- Outlet Section Code Starts Here -->
+        <div class="outlet-section">
+            <!-- <h3>Our Outlets</h3> -->
+            <!-- <div class="outlet-container">
+                <div class="left-outlet"> -->
+
+                    <!-- <img src="./images/car4.jpg" alt="" srcset="" width="360px" height="350px">
+
+                </div>
+                <div class="center-pic">
+                    <img src="./images/car2.jpg" alt="" srcset=""width="450px" height=100%>
+
+                </div>
+                
+               <div class="right-outlet">
+                    <img src="./images/car3.jpg" alt="" srcset="" width="360px" height="350px">
+                </div>
+
+                -->
+               
+            <!-- </div>
+
+        </div> -->
+        <video autoplay muted loop class="myVideo">
+  <source src="images/video2.mp4" type="video/mp4">
+ 
+</video>
+
+        <!-- Outlet Section Code ends Here -->
+</br>
+</br>
+        <!-- Review slider Section Code starts Here -->
+        <div class="slide-container">
+            <h3>What our Customers Say</h3>
+            <div class="slide-box active">
+                <div class="slide-text">
+                    <p>" First time in Shawarma Rox and YOU have to go! It’s the cutest little spot with amazing food. The Rumali Shawarma is to die for. IT WAS FIRE!! The service we received was so amazing and we will definitely be back again."</p>
+                </div>
+                <div class="author">
+                    <h4>--Mohammed Shan</h4>
+                </div>
+            </div>
+            <div class="slide-box">
+                <div class="slide-text">
+                    <p>" It’s a great experience. The ambience is very welcoming and charming. Amazing wines, food and service. Staff are extremely knowledgeable and make great recommendations. "</p>
+                </div>
+                <div class="author">
+                    <h4>--Razim Khan</h4>
+                </div>
+            </div>
+            <div class="slide-box">
+                <div class="slide-text">
+                    <p>" This place is great! Atmosphere is chill and cool but the staff is also really friendly. They know what they’re doing and what they’re talking about, and you can tell making the customers happy is their main priority."</p>
+                </div>
+                <div class="author">
+                    <h4>--Mohd Shajin</h4>
+                </div>
+            </div> 
+
+            <div id="prev" class="fas fa-chevron-left fa-lg"></div>
+            <div id="next" class="fas fa-chevron-right fa-lg"></div>
+        </div>
+        <!-- Review slider Section Code ends Here -->
+        
+        <!-- Footer starts here -->
+        <footer>
+            <div class="footer-container">
+                <div class="logo-side">
+                    <img src="./images/shalogo.png" alt="">
+                    <div class="social-connect">
+                        <a href="https://www.instagram.com/rocknrolla/ " target= _blank ><button>Connect us on Instagram <i class="fab fa-instagram fa-lg"></i></button></a>
+                    </div>
+                </div>
+                <div class="contacts" id="contact">
+                    <h5>Contact us</h5>
+                    <div class="contact-locations">
+                        <div class="location1">
+                            <h6>Ontario</h6>
+                            <p><i class="fas fa-map-marker-alt"></i> 3581 Sheppard Ave E,Scarborough,ON, M1T3K8</p>
+                            <i class="fas fa-phone-alt"><span><a href="tel:6475509797"> +91 6475509797</a></span></i>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+            <p class="copyright-text">Copyright © Shawarma Rox! 2022</p>
+        </footer>
+        
+
+
+
+ <!-- <div id="circularMenu" class="circular-menu">
+
+  <a class="floating-btn" onclick="document.getElementById('circularMenu');">
+    <i class="fa fa-plus"></i>
+  </a> -->
+
+  <!-- <menu class="items-wrapper">
+    <a href="#" class="menu-item fa fa-facebook"></a>
+    <a href="#" class="menu-item fa fa-twitter"></a>
+    <a href="#" class="menu-item fa fa-google-plus"></a>
+    <a href="#" class="menu-item fa fa-linkedin"></a>
+  </menu> -->
+
+</div> 
+
+
+ <div id="circularMenu1" class="circular-menu circular-menu-left active">
+
+  <a class="floating-btn" onclick="document.getElementById('circularMenu1').classList.toggle('active');">
+    <i class="fa fa-bars"></i>
+  </a>
+
+  <menu class="items-wrapper">
+    <a href="#" class="menu-item ">Home</a>
+    <a href="#about" class="menu-item">About</a>
+    <a href="#order" class="menu-item">Order</a>
+    <a href="#contact" class="menu-item">Contact</a>
+  </menu>
+
+
+</div> 
+<script src="main.js"></script>
+</body>
+</html>
